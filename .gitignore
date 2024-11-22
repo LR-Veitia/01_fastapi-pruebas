@@ -1,0 +1,11 @@
+# Ignorar carpetas generadas automáticamente
+__pycache__/
+.pytest_cache/
+.nox/
+venv/
+
+# Ignorar contenido generado temporalmente
+report.html
+assets/  
+
+
