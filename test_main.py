@@ -140,7 +140,7 @@ def test_with_custom_marker():
     assert True
 
 
-# Comparación avanzada de diccionarios
+# Comparación "avanzada" de diccionarios
 def test_compare_dicts():
     expected = {"name": "John", "age": 30}
     actual = {"name": "John", "age": 30}
