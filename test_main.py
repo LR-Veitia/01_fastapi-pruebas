@@ -1,6 +1,6 @@
 import pytest
 from fastapi.testclient import TestClient
-from main import app  
+from main import app
 from main import add, divide
 
 client = TestClient(app)
@@ -22,6 +22,7 @@ def test_read_item_without_query():
     response = client.get("/items/42")
     assert response.status_code == 200
     assert response.json() == {"item_id": 42, "q": None}
+
 
 ###############################################################################
 # Pruebas para la función add
@@ -51,7 +52,7 @@ def test_divide_by_zero():
 
 def test_divide_invalid_input():
     with pytest.raises(TypeError):
-        divide(10, "a")  
+        divide(10, "a")
 
 
 # Uso de fixtures
